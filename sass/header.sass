@@ -37,6 +37,86 @@ h1, h2, h3, h4, h5, h6, .button,
 .text-center
 	text-align: center
 
+.isnohome
+	.top-line .sf-menu > li > a 
+		padding: 15px 28px
+	.top-pannel
+		padding: 25px 0	
+	.slider 
+		.slide
+			padding: 130px 0 40px
+			h3
+				font-size: em(36px)
+	.owl-dots,
+	.slider .slide-wrap p,
+	.slide-img-wrap
+		display: none		
+	.slide-content
+		.col-md-6
+			width: 100%	
+	.slider-wrap .slider-nav div
+		top: 220px			
+
+.content
+	padding: 60px 0
+	article
+		color: #111
+		img
+			max-width: 100%
+		h1
+			margin-top: 0
+		p
+			margin-bottom: 0
+			margin-top: 0
+	.main-aside
+		.service-item
+			.service-item-image	
+				&::before
+					opacity: 0
+
+.main-aside
+	.top-pannel-box
+		margin: 30px 0
+		h4
+			font-family: "RobotoCondensedBold", sans-serif
+			font-size: em(22px)
+			margin-bottom: 20px 
+			color: #111
+		li
+			display: block
+			min-width: 100%
+			opacity: 1
+			padding: 0
+			&:hover
+				a
+					transition: all .5s ease 
+					background-color: $accent-color
+					color: #fff
+					font-family: "RobotoBold", sans-serif
+					.fa
+						color: lighten($accent-color, 40%)
+			a
+				color: #111
+				font-size: em(20px)
+				display: block
+				border-bottom: #f0f0f0 1px solid
+				text-transform: uppercase
+				transition: all .5s ease 
+				text-indent: 10px
+				padding: 
+					bottom: 8px 
+					top: 8px 
+					left: 20px
+				&:hover
+					color: $main-color
+
+				.fa
+					font-size: 14px
+					color: $accent-color
+					top: 12px
+		.menu-type-2
+				
+
 .top-line
 	background-color: $main-color
 	text-align: center
@@ -211,6 +291,8 @@ h1, h2, h3, h4, h5, h6, .button,
 	margin-top: 22px
 
 .slider-wrap
+	position: relative
+	display: none
 	.slider-nav-container
 		position: relative
 	.slider-nav
@@ -230,8 +312,8 @@ h1, h2, h3, h4, h5, h6, .button,
 	width: 100%
 	overflow-x: hidden
 	.owl-dots
-		position: absolute 
-		bottom: 80px
+		position: relative 
+		bottom: 40px
 		width: 100%
 		text-align: center 
 		.owl-dot
@@ -361,6 +443,7 @@ h1, h2, h3, h4, h5, h6, .button,
 	background-color: $main-color
 	color: #fff
 	padding: 28px 0 10px 
+	margin-top: -25px
 
 .teaser
 	&-item	

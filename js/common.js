@@ -1,6 +1,8 @@
 $(function() {
 
-	//fff
+	$(".slider-wrap").slideDown();
+
+	//callback
 	$("a[href=#callback]").click(function() {
 		$("#callback .formname").val($(this).data("form"));
 	});
