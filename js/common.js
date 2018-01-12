@@ -122,7 +122,6 @@ $(function() {
 
 });
 
-
 $(document).ready(function() {
 
 	$('.popup-with-move-anim').magnificPopup({
@@ -140,5 +139,11 @@ $(document).ready(function() {
 		removalDelay: 300,
 		mainClass: 'my-mfp-slide-bottom'
 	});
+
+});
+
+$(window).load(function() {
+	$(".loader_inner").fadeOut();
+	$(".loader").delay(400).fadeOut("slow");
 
 });
