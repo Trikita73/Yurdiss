@@ -19,41 +19,6 @@ $(function() {
 		delay: 200
 	});
 
-	// wol-carousel...
-	$(document).ready(function () {
-    var owl = $(".slider");
-    owl.owlCarousel({
-        itemClass: 'slide-wrap',
-        navText: "",
-        loop: true, //Зацикливаем слайдер
-        margin: 0, //Отступ от элемента справа в 30px
-        nav: true, //Отключение навигации
-        dots: true,
-        autoplay: false, //Автозапуск слайдера
-        smartSpeed: 1500, //Время движения слайда
-        autoplayTimeout: 3000, //Время смены слайда
-        /* animateOut: 'fadeOut',*/
-        responsive: { //Адаптивность. Кол-во выводимых элементов при определенной ширине.
-
-            0: {
-                items: 1
-            },
-            600: {
-                items: 1
-            },
-            1000: {
-                items: 1
-            }
-        }
-    });
-    $('.next').on('click', function () {
-        owl.trigger('next.owl.carousel', [500]);
-    });
-    $('.prev').on('click', function () {
-        owl.trigger('prev.owl.carousel', [500]);
-    });
-});﻿
-
 	//Mobile menu
 	$(".sf-menu").after("<div id='my-menu'>");
 	$(".sf-menu").clone().appendTo("#my-menu");
@@ -142,8 +107,44 @@ $(document).ready(function() {
 
 });
 
+// wol-carousel...
+$(document).ready(function () {
+  var owl = $(".slider");
+  owl.owlCarousel({
+    itemClass: 'slide-wrap',
+    navText: "",
+    loop: true, //Зацикливаем слайдер
+    margin: 0, //Отступ от элемента справа в 30px
+    nav: true, //Отключение навигации
+    dots: true,
+    autoplay: false, //Автозапуск слайдера
+    smartSpeed: 1500, //Время движения слайда
+    autoplayTimeout: 3000, //Время смены слайда
+    /* animateOut: 'fadeOut',*/
+    responsive: { //Адаптивность. Кол-во выводимых элементов при определенной ширине.
+
+      0: {
+          items: 1
+      },
+      600: {
+          items: 1
+      },
+      1000: {
+          items: 1
+      }
+    }
+  });
+  $('.next').on('click', function () {
+      owl.trigger('next.owl.carousel', [500]);
+  });
+  $('.prev').on('click', function () {
+      owl.trigger('prev.owl.carousel', [500]);
+  });
+});﻿
+
 $(window).load(function() {
 	$(".loader_inner").fadeOut();
 	$(".loader").delay(400).fadeOut("slow");
 
 });
+
