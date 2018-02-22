@@ -7,6 +7,9 @@ $(function() {
 		$("#callback .formname").val($(this).data("form"));
 	});
 
+	//fancybox
+	$(".fancybox").fancybox();
+
 	//equalheights
 	$(".service-item h4").equalHeights();
 	$(".new-item-text h4, p").equalHeights();
@@ -143,8 +146,8 @@ $(document).ready(function () {
 });﻿
 
 $(window).load(function() {
-	$(".loader_inner").fadeOut();
-	$(".loader").delay(700).fadeOut("slow");
+	$(".loader_inner").delay(1200).fadeOut();
+	$(".loader").delay(1200).fadeOut("slow");
 
 });
 
