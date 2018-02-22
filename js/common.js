@@ -56,25 +56,6 @@ $(function() {
 		});
 	};
 
-	//E-mail Ajax Send
-	//Documentation & Example: https://github.com/agragregra/uniMail
-	$(".callback").submit(function() { //Change
-		var th = $(this);
-		$.ajax({
-			type: "POST",
-			url: "mail.php", //Change
-			data: th.serialize()
-		}).done(function() {
-			$(".success").addClass("visible");
-			setTimeout(function() {
-				// Done Functions
-				th.trigger("reset");
-				$(".success").removeClass("visible");
-				$.magnificPopup.close();
-			}, 3000);
-		});
-		return false;
-	});
 
 	//Chrome Smooth Scroll
 	try {
