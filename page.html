@@ -484,7 +484,7 @@
 	<!-- Здесь пишем код -->
 	
 	<div class="hidden">
-		<form class="popup-form callback zoom-anim-dialog" id="callback">
+		<form method="POST" class="popup-form callback zoom-anim-dialog" action="https://formspree.io/dyachenkoandrii@gmail.com">
 
 		<div class="success">Спасибо за заявку! <br>Наши менеджеры свяжутся с вами в ближайшее время.</div>
 
@@ -497,11 +497,11 @@
 			<h3>Заказать звонок</h3>
 			<label>
 				<span>Ваше имя:</span>
-				<input type="text" name="Имя" placeholder="Введите ваше имя...">
+				<input type="text" name="Имя" placeholder="Введите ваше имя..." data-validation-required-message="Вы неверно ввели имя">
 			</label>
 			<label>
 				<span>Ваш телефон:</span>
-				<input type="text" name="Телефон" placeholder="Введите ваш телефон..." required/>
+				<input type="text" name="Телефон" placeholder="Введите ваш телефон..." data-validation-required-message="Вы неверно ввели e-mail" required/>
 			</label>
 			<div class="text-center">
 				<button class="button">Отправить</button>
@@ -509,7 +509,7 @@
 			<input class="formname" type="hidden" name="Форма">
 		</form>
 
-		<form class="popup-form callback zoom-anim-dialog" id="order">
+		<form method="POST" class="popup-form callback zoom-anim-dialog" id="order" action="https://formspree.io/dyachenkoandrii@gmail.com">
 
 		<div class="success">Спасибо за заявку! <br>Наши менеджеры свяжутся с вами в ближайшее время.</div>
 
@@ -522,11 +522,11 @@
 			<h3>Заказать: Оценка земли</h3>
 			<label>
 				<span>Ваше имя:</span>
-				<input type="text" name="Имя" placeholder="Введите ваше имя...">
+				<input type="text" name="Имя" placeholder="Введите ваше имя..." data-validation-required-message="Вы неверно ввели имя">
 			</label>
 			<label>
 				<span>Ваш телефон:</span>
-				<input type="text" name="Телефон" placeholder="Введите ваш телефон..." required/>
+				<input type="text" name="Телефон" placeholder="Введите ваш телефон..." data-validation-required-message="Вы неверно ввели e-mail" required/>
 			</label>
 			<div class="text-center">
 				<button class="button">Заказать</button>
