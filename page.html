@@ -23,7 +23,6 @@
 	<link rel="apple-touch-icon" href="img/favicon/note-touch-icon.png">
 	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/note-touch-icon-72x72.png">
 	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/note-touch-icon-114x114.png">
-	<link rel="stylesheet" href="libs/fancybox/jquery.fancybox.css" />
 	<link rel="stylesheet" href="css/main.min.css">
 	<link rel="stylesheet" href="css/fonts.min.css">
 
@@ -484,7 +483,7 @@
 	<!-- Здесь пишем код -->
 	
 	<div class="hidden">
-		<form method="POST" class="popup-form callback zoom-anim-dialog" action="https://formspree.io/dyachenkoandrii@gmail.com">
+		<form class="popup-form callback zoom-anim-dialog" id="callback">
 
 		<div class="success">Спасибо за заявку! <br>Наши менеджеры свяжутся с вами в ближайшее время.</div>
 
@@ -497,11 +496,11 @@
 			<h3>Заказать звонок</h3>
 			<label>
 				<span>Ваше имя:</span>
-				<input type="text" name="Имя" placeholder="Введите ваше имя..." data-validation-required-message="Вы неверно ввели имя">
+				<input type="text" name="Имя" placeholder="Введите ваше имя...">
 			</label>
 			<label>
 				<span>Ваш телефон:</span>
-				<input type="text" name="Телефон" placeholder="Введите ваш телефон..." data-validation-required-message="Вы неверно ввели e-mail" required/>
+				<input type="text" name="Телефон" placeholder="Введите ваш телефон..." required/>
 			</label>
 			<div class="text-center">
 				<button class="button">Отправить</button>
@@ -509,7 +508,7 @@
 			<input class="formname" type="hidden" name="Форма">
 		</form>
 
-		<form method="POST" class="popup-form callback zoom-anim-dialog" action="https://formspree.io/dyachenkoandrii@gmail.com">
+		<form class="popup-form callback zoom-anim-dialog" id="order">
 
 		<div class="success">Спасибо за заявку! <br>Наши менеджеры свяжутся с вами в ближайшее время.</div>
 
@@ -522,11 +521,11 @@
 			<h3>Заказать: Оценка земли</h3>
 			<label>
 				<span>Ваше имя:</span>
-				<input type="text" name="Имя" placeholder="Введите ваше имя..." data-validation-required-message="Вы неверно ввели имя">
+				<input type="text" name="Имя" placeholder="Введите ваше имя...">
 			</label>
 			<label>
 				<span>Ваш телефон:</span>
-				<input type="text" name="Телефон" placeholder="Введите ваш телефон..." data-validation-required-message="Вы неверно ввели e-mail" required/>
+				<input type="text" name="Телефон" placeholder="Введите ваш телефон..." required/>
 			</label>
 			<div class="text-center">
 				<button class="button">Заказать</button>
@@ -550,7 +549,6 @@
 	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
 	<script src="libs/modernizr/modernizr.js"></script>
 	<script src="libs/waypoints/waypoints.min.js"></script>
-	<script src="libs/fancybox/jquery.fancybox.pack.js"></script>
 	<script src="libs/animate/animate-css.js"></script>
 	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
 	<script src="libs/superfish/dist/js/superfish.min.js"></script>

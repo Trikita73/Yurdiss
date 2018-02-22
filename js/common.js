@@ -7,9 +7,6 @@ $(function() {
 		$("#callback .formname").val($(this).data("form"));
 	});
 
-	//fancybox
-	$(".fancybox").fancybox();
-
 	//equalheights
 	$(".service-item h4").equalHeights();
 	$(".new-item-text h4, p").equalHeights();
@@ -55,7 +52,6 @@ $(function() {
 			return $(this).attr("src").replace(".svg", ".png");
 		});
 	};
-
 
 	//Chrome Smooth Scroll
 	try {
